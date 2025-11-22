@@ -1,0 +1,70 @@
+.clip-card {
+  background: white;
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.clip-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.clip-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  border-bottom: 2px solid white;
+  padding-bottom: 0.5rem;
+}
+
+.clip-title {
+  color: blue;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.rating-container {
+  display: flex;
+  align-items: center;
+}
+
+.rating-stars {
+  height: 25px;
+}
+
+.clip-description {
+  color: black;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+.video-container {
+  width: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.video-container video {
+  display: block;
+  border: 1px solid white;
+  border-radius: 4px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .clip-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .rating-container {
+    align-self: flex-end;
+  }
+}
